@@ -1,0 +1,781 @@
+{
+	"fokus": "Fokus",
+	"loading": "Ładowanie",
+	"navigation": {
+		"caregiver": {
+			"panel": "Panel",
+			"plans": "Plany",
+			"awards": "Nagrody",
+			"caregiverCode": "Mój kod opiekuna"
+		},
+		"child": {
+			"plans": "Plany",
+			"rewards": "Nagrody",
+			"achievements": "Osiągnięcia"
+		},
+		"settings": "Ustawienia"
+	},
+	"page": {
+		"error": {
+			"noConnectionError": {
+				"title": "Brak połączenia",
+				"subtitle": "Aplikacja wymaga połączenia z Internetem do działania",
+				"hint": "Upewnij się, że urządzenie ma dostęp do Internetu",
+				"action": "Spróbuj ponownie"
+			},
+			"unknownError": {
+				"title": "Aplikacja napotkała nieobsługiwany problem",
+				"subtitle": "Nasz zespół pracuje nad jego rozwiązaniem.\nPrzepraszamy za niedogodności.",
+				"hint": "Restart aplikacji może pomóc rozwiązać problem",
+				"action": "Zamknij aplikację"
+			}
+		},
+		"loginSection": {
+			"roles": {
+				"introduction": "Jestem",
+				"caregiver": "Opiekunem",
+				"child": "Dzieckiem",
+				"help": "Potrzebuję pomocy"
+			},
+			"caregiverSignIn": {
+				"logInTitle": "Zaloguj się",
+				"logInHint": "Uzyskaj dostęp do swojego konta",
+				"registerTitle": "Nowe konto",
+				"changeResetLabel": "Zresetuj hasło",
+				"registerHint": "Załóż nowe konto opiekuna aby móc korzystać z aplikacji",
+				"passwordForgotten": "Nie pamiętasz hasła?",
+				"resetPassword": "Zresetuj hasło",
+				"enterEmail": "Wprowadź adres e-mail",
+				"resetEmailSent": "E-mail z linkiem resetującym hasło został wysłany",
+				"resetVerificationEmail": "Wyślij email weryfikacyjny"
+			},
+			"caregiverSignUp": {
+				"registerTitle": "Stwórz nowe konto",
+				"registerHint": "Uzupełnij poniższy formularz lub użyj konta Google",
+				"agreement": "Akceptuję",
+				"termsOfUse": "warunki korzystania",
+				"privacyPolicy": "politykę prywatności"
+			},
+			"childProfiles": {
+				"addProfile": "Dodaj profil",
+				"noSavedProfiles": "Brak zapisanych profili",
+				"profileLogInTitle": "Wybierz swój profil",
+				"profileLogInHint": "Uzyskaj dostęp do swojego profilu"
+			},
+			"childSignIn": {
+				"childCode": "Kod dziecka",
+				"caregiverCode": "Kod opiekuna",
+				"profileAddTitle": "Dodaj profil",
+				"profileAddHint": "Dodaj istniejący profil za pomocą specjalnego kodu dziecka lub stwórz nowy wypełniając formularz",
+				"profileAddHintSignedIn": "Stwórz nowy profil dziecka połączony z twoim kontem",
+				"createNewProfile": "Stwórz nowy profil dziecka",
+				"addProfile": "Dodaj profil",
+				"avatarGroups": {
+					"boy": "Chłopak",
+					"girl": "Dziewczyna"
+				}
+			},
+			"backToLoginPage": "Powrót do ekranu logowania",
+			"backToApp": "Powrót do aplikacji",
+			"backToStartPage": "Powrót do ekranu startowego"
+		},
+		"notifications": {
+			"header": {
+				"title": "Powiadomienia"
+			},
+			"content": {
+				"caregiver": {
+					"rewardBought": "{CHILD_NAME} odebrał(a) nagrodę",
+					"taskFinished": "{CHILD_NAME} wykonał(a) zadanie",
+					"taskUnfinished": "{CHILD_NAME} nie skończył(a) zadania",
+					"gradeTask": "Oceń zadanie",
+					"graded": "Oceniono"
+				},
+				"child": {
+					"taskApproved": "Masz nowe punkty za zadanie!",
+					"taskApprovedPrefix": "Zadanie ocenione: ",
+					"taskApprovedStars": "{STARS}",
+					"taskApprovedCount": " oraz {COUNT, plural, offset:0, one {# punkt} two {# punkty} few {# punkty} other {# punktów}}",
+					"badgeAwarded": "Masz nową odznakę!",
+					"taskRejected": "Wykonaj zadanie jeszcze raz"
+				}
+			}
+		},
+		"settings": {
+			"header": {
+				"title": "Ustawienia"
+			},
+			"content": {
+				"profile": {
+					"header": "Profil",
+					"editNameLabel": "Zmień imię",
+					"editChildNameLabel": "Zmień imię dziecka",
+					"changePasswordLabel": "Zmień hasło",
+					"deleteAccountLabel": "Usuń konto",
+					"deleteChildAccountLabel": "Usuń konto dziecka",
+					"deleteAccountHint": "Trwale usuń konto i profile dzieci",
+					"deleteAccountDescription": "Czy na pewno chcesz usunąć swoje konto? Spowoduje to trwałe wymazanie wszystkich wprowadzonych w aplikacji danych włączając w to:",
+					"deleteChildAccountDescription": "Czy na pewno chcesz usunąć konto tego dziecka? Spowoduje to trwałe wymazanie wszystkich jego/jej danych włączając w to:",
+					"deleteAccountDataList": "Plany|Zadania|Nagrody|Profile dzieci|Historię wykonanych zadań",
+					"deleteChildAccountDataList": "Profil|Nagrody|Punkty|Historię wykonanych zadań",
+					"deleteAccountConfirm": "Wprowadź swoje hasło aby potwierdzić:",
+					"accountDeletedText": "Konto zostało pomyślnie usunięte",
+					"accountChildDeletedText": "Profil dziecka został pomyślnie usunięty"
+				},
+				"appSettings": {
+					"header": "Ustawienia aplikacji",
+					"currenciesLabel": "Waluty punktowe",
+					"changeLanguageLabel": "Język aplikacji",
+					"languages": {
+						"default": "Systemowy (domyślny)",
+						"pl_PL": "Polski",
+						"en_US": "Angielski"
+					}
+				},
+				"appInfo": {
+					"header": "Informacje",
+					"showAboutAppLabel": "O aplikacji",
+					"about": {
+						"version": "Wersja",
+						"description": "Fokus to aplikacja mobilna pomagająca dzieciom w realizacji codziennych zadań pod kontrolą opiekunów. Powstała w ramach projektu grupowego realizowanego na Politechnice Gdańskiej.",
+						"creators": "Autorzy",
+						"licences": "Licencje",
+						"projectPage": "Strona projektu",
+						"termsOfUse": "Warunki korzystania",
+						"privacyPolicy": "Polityka prywatności"
+					},
+					"contactUsHint": "Pomóż ulepszyć aplikację"
+				}
+			}
+		},
+		"caregiverSection": {
+			"panel": {
+				"header": {
+					"greetings": "Witaj",
+					"addChild": "Dodaj dziecko",
+					"addCaregiver": "Dodaj znajomego",
+					"rateTasks": "Oceń zadania"
+				},
+				"content": {
+					"childProfilesTitle": "Profile dzieci",
+					"childProfilesSubtitle": "Dzieci zdobywają punkty za wykonywanie zadań",
+					"noChildProfilesAdded": "Brak przypisanych dzieci",
+					"caregiverProfilesTitle": "Znajomi",
+					"caregiverProfilesSubtitle": "Lista zaprzyjaźnionych opiekunów",
+					"noCaregiverProfilesAdded": "Brak zaprzyjaźnionych opiekunów",
+					"caregiverCode": "Kod opiekuna",
+					"caregiverAddedText": "Dodano nowego znajomego",
+					"caregiverAlreadyBefriendedError": "Ten opiekun jest już twoim znajomym",
+					"enteredOwnCaregiverCodeError": "Nie możesz dodać siebie do znajomych",
+					"todayPlans": "{NUM_PLANS, plural, offset:0 zero {Brak planów} one {# plan} two {# plany} few {# plany} other {# planów}} na dziś",
+					"activePlan": "1 plan w trakcie wykonywania"
+				}
+			},
+			"childDashboard": {
+				"header": {
+					"title": "Szczegóły dziecka",
+					"childCode": "Kod dziecka",
+					"assignPlanButton": "Przypisz plany",
+					"assignPlanTitle": "Wybierz plany do przypisania",
+					"assignBadgeButton": "Przyznaj odznakę",
+					"assignBadgeTitle": "Wybierz odznaki do przyznania",
+					"noBadgesToAssignText": "Brak dostępnych odznak do przyznania",
+					"tabs": {
+						"plans": "Plany",
+						"rewards": "Nagrody",
+						"achievements": "Osiągnięcia"
+					}
+				},
+				"content": {
+					"plansTitle": "Dzisiejsze plany",
+					"noPlansText": "Brak zaplanowanych działań na dziś",
+					"openCalendarButton": "Otwórz kalendarz",
+					"rewardsTitle": "Odebrane nagrody",
+					"noRewardsText": "Brak odebranych nagród",
+					"achievementsTitle": "Przyznane odznaki",
+					"noAchievementsText": "Brak przyznanych odznak",
+					"alerts": {
+						"noPlansAdded": "Nie dodano jeszcze żadnego planu. Dodaj plan, aby móc przypisać go dziecku.",
+						"unratedTasksExist": "Istnieją nieocenione zadania. Odwiedź stronę oceniania, aby przynać punkty za wykonane zadania.",
+						"noRewardsAdded": "Lista możliwych do kupienia nagród jest pusta. Dodaj nagrodę, aby dziecko mogo ją zdobyć.",
+						"noBadgesAdded": "Lista możliwych do przyznania odznak jest pusta. Dodaj odznakę, aby móc przydzielić ją dziecku."
+					}
+				}
+			},
+			"calendar": {
+				"header": {
+					"title": "Kalendarz planów",
+					"filterPlansTitle": "Filtruj wyświetlane plany",
+					"showPlansForTitle": "Wyświetlaj plany przypisane do",
+					"emptyListHeader": "Filtrowanie planów niedostępne",
+					"emptyListText": "Nie dodano jeszcze do konta żadnego profilu dziecka"
+				},
+				"content": {
+					"plansOnDateTitle": "Plany na dzień {DATE}",
+					"noPlansOnDateTitle": "Brak aktywnych planów na ten dzień",
+					"planAssignedToSubtitle": "Przypisany do",
+					"planNotAssignedToSubtitle": "Plan nieprzypisany",
+					"addPlan": "Dodaj plan"
+				}
+			},
+			"friendPlans": {
+				"content": {
+					"noPlansText": "Ten opiekun nie dodał jeszcze żadnego planu",
+					"plansTitle": "Plany znajomego",
+					"duplicateButton": "Stwórz plan na podstawie tego",
+					"removeFriendTitle": "Usuń ze znajomych",
+					"removeFriendText": "Stracisz dostęp do planów stworzonych przez tego znajomego. Na pewno chcesz usunąć tego znajomego?",
+					"friendRemovedText": "Usunięto znajomego"
+				}
+			},
+			"plans": {
+				"header": {
+					"title": "Plany",
+					"addPlan": "Dodaj plan",
+					"calendar": "Kalendarz",
+					"pageHint": "Zarządzaj zadaniami dzieci"
+				},
+				"content": {
+					"addedActivePlansTitle": "Aktywne plany",
+					"addedActivePlansSubtitle": "Widoczne dla dzieci",
+					"addedDeactivatedPlansTitle": "Nieaktywne plany",
+					"addedDeactivatedPlansSubtitle": "Niewidoczne dla dzieci",
+					"noPlansAdded": "Brak planów",
+					"tasks": "{NUM_TASKS, plural, offset:0  zero {# zadań} one {# zadanie} two {# zadania} few {# zadania} other {# zadań}}"
+				}
+			},
+			"planForm": {
+				"createPlanTitle": "Dodawanie nowego planu",
+				"editPlanTitle": "Edytowanie planu",
+				"copyPlanTitle": "Kopiowanie planu",
+				"planCreatedText": "Plan został stworzony",
+				"planEditedText": "Zmiany zostały zapisane",
+				"step": "Krok {NUM_STEP}",
+				"stepOneTitle": "Parametry planu",
+				"stepTwoTitle": "Lista zadań",
+				"addTaskButton": "Dodaj zadanie",
+				"editTaskButton": "Edytuj zadanie",
+				"removeTaskButton": "Usuń zadanie",
+				"saveTaskButton": "Zapisz zadanie",
+				"noTasksMessage": "Lista zadań jest pusta",
+				"requiredTaskListTitle": "Lista zadań obowiązkowych",
+				"optionalTaskListTitle": "Lista zadań opcjonalnych",
+				"clearAllTasksText": "Na pewno chcesz usunąć wszystkie wprowadzone zadania?",
+				"taskLimitTitle": "Limit zadań",
+				"taskLimitText": "Osiągnięto dozwolony limit zadań w planie ({TASK_LIMIT_NUM}). Nie możesz dodać kolejnego zadania.",
+				"taskListEmptyTitle": "Brak zadań",
+				"taskListEmptyText": "Każdy plan musi posiadać minimum jedno zadanie.",
+				"fields": {
+					"advancedOptionsTitle": "Ustawienia zaawansowane",
+					"planName": {
+						"label": "Nazwa planu",
+						"emptyError": "Nazwa planu nie może być pusta"
+					},
+					"assignedChildren": {
+						"label": "Przypisane dzieci",
+						"hint": "Wybierz jedno lub więcej dzieci",
+						"emptyListHeader": "Przypisywanie dzieci niedostępne",
+						"emptyListText": "Nie dodano jeszcze do konta żadnego profilu dziecka, można jednak kontynuować tworzenie planu bez ich przypisywania."
+					},
+					"repeatability": {
+						"label": "Powtarzalność",
+						"options": {
+							"recurring": "Plan cykliczny",
+							"onlyOnce": "Plan jednorazowy",
+							"untilCompleted": "Plan do ukończenia"
+						}
+					},
+					"repeatabilityRange": {
+						"label": "Okres powtarzania",
+						"options": {
+							"weekly": "Tygodniowo",
+							"monthly": "Miesięcznie"
+						}
+					},
+					"days": {
+						"labelWeekly": "Dni tygodnia",
+						"labelMonthly": "Dni miesiąca",
+						"hint": "Wybierz minimum 1 dzień"
+					},
+					"onlyOneDate": {
+						"label": "Data wykonania",
+						"emptyError": "Data wykonania musi być ustawiona"
+					},
+					"range": {
+						"fromLabel": "Plan dostępny od dnia",
+						"toLabel": "Plan dostępny do dnia",
+						"hint": "Pozostaw puste, aby nie ograniczać zakresu"
+					},
+					"active": {
+						"label": "Plan aktywny",
+						"hintOn": "Widoczny od razu po stworzeniu",
+						"hintOff": "Ukryty po stworzeniu"
+					}
+				}
+			},
+			"taskForm": {
+				"removeTaskTitle": "Usuń zadanie",
+				"removeTaskText": "Na pewno chcesz usunąć to zadanie?",
+				"fields": {
+					"taskName": {
+						"label": "Nazwa zadania"
+					},
+					"taskDescription": {
+						"label": "Opis zadania"
+					},
+					"subtaskDescription": {
+						"label": "Nowe podzadanie",
+						"add": "Dodaj podzadanie",
+						"sectionTitle": "Lista podzadań",
+						"sectionSubtitle": "{NUM_SUBTASKS, plural, offset:0  zero {# podzadań} one {# podzadanie} two {# podzadania} few {# podzadania} other {# podzadań}}"
+					},
+					"taskOrder": {
+						"label": "Kolejność wykonywania"
+					},
+					"taskPoints": {
+						"valueLabel": "Nagroda punktowa",
+						"currencyLabel": "Waluta",
+						"hint": "Pozostaw puste, aby nie przyznawać punktów"
+					},
+					"taskTimer": {
+						"label": "Czas na wykonanie zadania",
+						"notSet": "Nieograniczony",
+						"set": "Ustawiony na",
+						"format": "{HOURS_NUM, plural, offset:0 zero {} other {# godz. }}{MINUTES_NUM} min"
+					},
+					"taskOptional": {
+						"label": "Zadanie opcjonalne",
+						"hint": "Zadania opcjonalne występują poza kolejnością"
+					}
+				}
+			},
+			"awards": {
+				"header": {
+					"title": "Nagrody",
+					"addReward": "Dodaj nagrodę",
+					"addBadge": "Dodaj odznakę",
+					"pageHint": "Zwiększ motywację do pracy"
+				},
+				"content": {
+					"addedRewardsTitle": "Zdefiniowane nagrody",
+					"addedRewardsSubtitle": "Nagrody mogą zostać odebrane za punkty",
+					"noRewardsAdded": "Brak zdefiniowanych nagród, dodaj pierwszą teraz",
+					"addedBadgesTitle": "Zdefiniowane odznaki",
+					"addedBadgesSubtitle": "Odznaki przyznawane są przez opiekuna",
+					"noBadgesAdded": "Brak zdefiniowanych odznak, dodaj pierwszą teraz",
+					"noDescriptionSubtitle": "Brak opisu",
+					"removeRewardTitle": "Usuń nagrodę",
+					"removeRewardText": "Odebrane przez dzieci nagrody nie zostaną usunięte. Nagroda zniknie jednak z listy możliwych do odbioru. Na pewno chcesz usunąć tą nagrodę?",
+					"removeBadgeTitle": "Usuń odznakę",
+					"removeBadgeText": "Odznaki przydzielone dzieciom nie zostaną usunięte. Nie będzie jednak możliwości przyznawania tej odznaki innym dzieciom. Na pewno chcesz usunąć tą odznakę?",
+					"rewardAddedText": "Dodano nagrodę",
+					"badgeAddedText": "Dodano odznakę",
+					"rewardUpdatedText": "Zmodifikowano nagrodę",
+					"rewardRemovedText": "Usunięto nagrodę",
+					"badgeRemovedText": "Usunięto odznakę"
+				}
+			},
+			"rewardForm": {
+				"addRewardTitle": "Dodaj nagrodę",
+				"editRewardTitle": "Edytuj nagrodę",
+				"removeRewardTitle": "Usuń nagrodę",
+				"removeRewardText": "Na pewno chcesz usunąć tą nagrodę?",
+				"fields": {
+					"rewardName": {
+						"label": "Nazwa nagrody",
+						"emptyError": "Nazwa nagrody nie może być pusta"
+					},
+					"rewardLimit": {
+						"label": "Limit nagród",
+						"zeroError": "Wartość musi być pusta lub dodatnia",
+						"hint": "Liczba nagród możliwych do odbioru przez dziecko. Pozostaw puste, aby nie limitować"
+					},
+					"rewardPoints": {
+						"valueLabel": "Koszt punktowy",
+						"currencyLabel": "Waluta punktów",
+						"hint": "Ilość punktów potrzebna do odbioru nagrody przez dziecko",
+						"emptyError": "Koszt punktowy musi wynosić minimum 1 punkt"
+					},
+					"rewardIcon": {
+						"label": "Ikona nagrody",
+						"groups": {
+							"gift": "Prezent",
+							"activity": "Aktywność",
+							"relax": "Odpoczynek",
+							"food": "Jedzenie"
+						}
+					}
+				}
+			},
+			"badgeForm": {
+				"addBadgeTitle": "Dodaj odznakę",
+				"fields": {
+					"badgeName": {
+						"label": "Nazwa odznaki",
+						"emptyError": "Nazwa odznaki nie może być pusta"
+					},
+					"badgeDescription": {
+						"label": "Opis odznaki"
+					},
+					"badgeIcon": {
+						"label": "Ikona odznaki",
+						"groups": {
+							"praise": "Pochwała",
+							"medal": "Medal",
+							"trophy": "Trofeum"
+						}
+					}
+				}
+			},
+			"planDetails":  {
+				"header": {
+					"title": "Szczegóły planu",
+					"noChildren": "Nie przypisano"
+				},
+				"content": {
+					"mandatoryTasks": "Zadania obowiązkowe",
+					"additionalTasks": "Zadania dodatkowe",
+					"noTasks": "Brak zadań",
+					"copyPlanButton": "Skopiuj plan",
+					"planRemovedText": "Usunięto plan"
+				}
+			},
+			"rating":  {
+				"header": {
+					"title": "Ocena zadań"
+				},
+				"content": {
+					"noTasksToRate": "Brak zadań do oceny",
+					"notRatedTasksLeft": "{TASKS_NUM, plural, offset:0 zero {Wszystkie zadania ocenione!} one {# nieocenione zadanie} two {# nieocenione zadania} few {# nieocenione zadania} other {# nieocenionych zadań}}",
+					"rateTaskButton": "Oceń zadanie",
+					"previousTaskButton": "Poprzednie",
+					"nextTaskButton": "Następne",
+					"raportCard": {
+						"carriedOutBy": "Wykonawca zadania",
+						"raportDate": "Data wykonania zadania",
+						"raportTime": "Czas wykonywania zadania",
+						"raportBreaks": "Wykorzystane przerwy",
+						"breakCount": "{BREAKS_NUM, plural, offset:0 zero {Brak przerw} one {# przerwa} two {# przerwy} few {# przerwy} other {# przerw}}",
+						"totalBreakTime": "czas",
+						"timeFormat": "{HOURS_NUM, plural, offset:0 zero {} other {# godz. }}{MINUTES_NUM} min {SECONDS_NUM} sek.",
+						"ratedOnLabel": "Oceniono na {STARS_NUM}/5",
+						"ratedOnHint": "Dziecko otrzymało {POINTS_NUM, plural, offset:0 one {# punkt} two {# punkty} few {# punkty} other {# punktów}}",
+						"rejectedLabel": "Oznaczono jako niewykonane",
+						"rejectedHint": "Dziecko musi powtórzyć zadanie"
+					},
+					"form": {
+						"ratingLabel": "Ocena",
+						"pointsAssigned": "Przyznawane punkty",
+						"ratingLevels": {
+							"rated5": "Świetnie",
+							"rated4": "Dobrze",
+							"rated3": "OK",
+							"rated2": "Może być",
+							"rated1": "Dopuszczalnie",
+							"rejected": "Zadanie odrzucone"
+						},
+						"markTaskAsNotDone": "Oznacz jako niewykonane",
+						"markTaskAsNotDoneHint": "Dziecko musi ponownie wykonać zadanie, aby zdobyć punkty",
+						"rateCommentLabel": "Komentarz do zadania"
+					}
+				}
+			},
+			"currencies": {
+				"header": {
+					"title": "Waluty"
+				},
+				"content": {
+					"generalHint": "Możesz ustawić do trzech dodatkowych walut w aplikacji, a następnie używać ich w zadaniach i nagrodach. Domyślna waluta aplikacji nie może zostać zmodyfikowana.",
+					"currenciesUpdatedText": "Zaktualizowano listę walut",
+					"saveCurrenciesButton": "Zapisz konfigurację",
+					"currencyNotUsed": "Nieużywana",
+					"currencyNameLabel": "Nazwa waluty",
+					"clearCurrencyText": "Stracisz możliwość używania tej waluty. Punkty zdobyte do tej pory przez dzieci zostaną zachowane. Czy na pewno chcesz wyczyścić tę walutę?",
+					"currencies": {
+						"diamond": "Diament",
+						"emerald": "Szmaragd",
+						"ruby": "Rubin",
+						"amethyst": "Ametyst"
+					}
+				}
+			}
+		},
+		"childSection": {
+			"panel": {
+				"header": {
+					"greetings": "Cześć",
+					"myPoints": "Moje punkty",
+					"noPoints": "Brak zdobytych punktów",
+					"pageHint": "Wykonuj zadania i zdobywaj punkty",
+					"garden": "Ogród"
+				},
+				"content": {
+					"futurePlans": "Kalendarz planów"
+				}
+			},
+			"planInProgress": {
+				"header": {
+					"title": "Szczegóły planu"
+				},
+				"content": {
+					"toDoTasks": "Zadania do wykonania",
+					"additionalTasks": "Zadania dodatkowe",
+					"noTasks": "Brak zadań",
+					"tasks": "{NUM_TASKS, plural, offset:0  zero {# zadań} one {# zadanie} two {# zadania} few {# zadania} other {# zadań}}",
+					"taskTimer": {
+						"label": "Czas na wykonanie zadania",
+						"notSet": "Nieograniczony",
+						"set": "Ustawiony na",
+						"duration": "Łączny czas wykonywania zadania",
+						"formatDuration": "Czas: {TIME_NUM}",
+						"formatBreak": "Przerwa: {TIME_NUM}",
+						"format": "{HOURS_NUM, plural, offset:0 zero {} other {# godz. }}{MINUTES_NUM} min",
+						"break": "Łączny czas przerw"
+					},
+					"chips" : {
+						"rejected" : "Odrzucone",
+						"rating" : "{RATING}/5",
+						"notEvaluated" : "Nieocenione",
+						"rejectedTooltip" : "Zadanie odrzucone przez opiekuna",
+						"notEvaluatedTooltip" : "Poproś opiekuna o ocenę",
+						"pointsPossible" : "Możliwe do zdobycia",
+						"timer": "Czas wykonywania planu"
+					},
+					"taskInProgressDialog" : {
+						"title": "Inne zadanie w trakcie wykonywania",
+						"content": "Nie możesz wykonywać dwóch zadań jednocześnie. Zakończ aktualne zadanie i spróbuj ponownie."
+					},
+					"fab" : {
+						"completePlan": "Zakończ plan",
+						"completed": "Plan został zakończony",
+						"dialogTitle": "Kończenie planu",
+						"dialogContent": "Zakończenie planu spowoduje odrzucenie niewykonanych zadań. Będziesz mógł je wykonać ponownie do końca dnia. Czy na pewno chcesz kontynuować?"
+					}
+				}
+			},
+			"taskInProgress": {
+				"header": {
+					"title": "Wykonywanie planu"
+				},
+				"content": {
+					"reject": "ODRZUĆ",
+					"break": "PRZERWA",
+					"done": "ZROBIONE",
+					"timeLeft": "Pozostały czas:",
+					"breakTime": "Czas przerwy:",
+					"isCompleted": "Wykonano zadanie?",
+					"breakButton": "Przerwa",
+					"resumeButton": "Wznów",
+					"pointsToGet": "Do zdobycia:",
+					"motivate": "Wykonuj zadania!",
+					"completionTime": "Czas wykonywania:",
+					"latency": "Spóźnienie:"
+				},
+				"cards" : {
+					"break": {
+						"title": "Trwa przerwa, \nodpocznij chwilę!"
+					},
+					"done": {
+						"title": "Zadanie wykonane!",
+						"content1": "Punkty otrzymasz po zatwierdzeniu przez opiekuna.",
+						"content2": "Kontynuuj wykonywanie zadań!"
+					},
+					"rejected": {
+						"title": "Zadanie anulowane",
+						"content1": "Możesz ponownie wykonać to zadanie \nlub przejść do następnego!"
+					}
+				}
+			},
+			"calendar": {
+				"header": {
+					"title": "Kalendarz planów"
+				},
+				"content": {
+					"plansOnDateTitle": "Plany na dzień {DATE}",
+					"noPlansOnDateTitle": "Brak planów na ten dzień"
+				}
+			},
+			"rewards": {
+				"content": {
+					"rewardsTitle": "Nagrody do zdobycia",
+					"noRewardsMessage": "Brak nagród do wyświetlenia",
+					"rewardsHint": "Zdobyte punkty możesz wymienić na nagrody",
+					"claimedRewardsTitle": "Odebrane nagrody",
+					"claimRewardTitle": "Odbierz nagrodę",
+					"claimButton": "Odbierz",
+					"rewardClaimedText": "Nagroda odebrana"
+				}
+			},
+			"achievements": {
+				"content": {
+					"achievementsTitle": "Moje osiągnięcia",
+					"achievementsHint": "Dotknij odznakę, aby zobaczyć szczegóły",
+					"noAchievementsMessage": "Brak osiągnięć do wyświetlenia",
+					"earnedBadgeTitle": "Zdobyta odznaka",
+					"earnedBadgeDate": "Data zdobycia"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"claimCostLabel": "Koszt nagrody",
+		"claimDateLabel": "Odebrano dnia",
+		"unlimitedReward": "Nagroda nielimitowana",
+		"limitedReward": "Limit {REWARD_LIMIT, plural, offset:0 one {jednej nagrody} other {# nagród}} na dziecko"
+	},
+	"plans": {
+		"todaysPlans": "Dzisiejsze plany",
+		"remainingTodaysPlans": "Pozostałe dzisiejsze plany",
+		"inProgress": "W trakcie",
+		"noPlans": "Brak planów",
+		"completedPlans": "Zakończone plany",
+		"tasks": "{NUM_TASKS, plural, offset:0  zero {# zadań} one {# zadanie} two {# zadania} few {# zadania} other {# zadań}}",
+		"noTaskCompleted": "{NUM_ALL_TASKS, plural, offset:0 one {# zadanie} two {# zadania} few {# zadania} other {# zadań}} do wykonania",
+		"taskProgress": "Wykonano {NUM_TASKS} z {NUM_ALL_TASKS} zadań"
+	},
+	"repeatability": {
+		"once": "Dnia {DAY}",
+		"startedOn": "Od {DAY}",
+		"weekly": "Co {WEEKDAY, select, 1 {każdy} 2 {każdy} 3 {każdą} 4 {każdy} 5 {każdy} 6 {każdą} 7 {każdą} other {}}",
+		"monthly": "Każdego {DAYS} dnia miesiąca",
+		"weekday": "{WEEKDAY, select, 1 {poniedziałek} 2 {wtorek} 3 {środę} 4 {czwartek} 5 {piątek} 6 {sobotę} 7 {niedzielę} other {}}",
+		"untilCompleted": "dopóki niezakończony",
+		"range": "od {FROM} do {TO}"
+	},
+	"date": {
+		"weekday": "{WEEKDAY, select, 1 {Poniedziałek} 2 {Wtorek} 3 {Środa} 4 {Czwartek} 5 {Piątek} 6 {Sobota} 7 {Niedziela} other {}}",
+		"everyday": "Codziennie",
+		"workdays": "Tylko dni robocze"
+	},
+	"alert": {
+		"errorOccurred": "Wystąpił błąd",
+		"noConnection": "Brak połączenia",
+		"noHint": "Brak podpowiedzi",
+		"genericEmptyValue": "Pole nie może być puste",
+		"genericRangeOverflowValue": "Wartość musi mieścić się w zakresie {A}-{B}",
+		"unsavedProgressTitle": "Niezapisane zmiany",
+		"unsavedProgressMessage": "Posiadasz niezapisane zmiany. Czy jesteś pewien, że chcesz wyjść?",
+		"codeCopied": "Kod został skopiowany do schowka",
+		"deletePlan": "Usuń plan",
+		"confirmPlanDeletion": "Czy na pewno chcesz usunąć ten plan? Spowoduje to trwałe wymazanie wszystkich związanych z nim danych włączając w to historię wykonanych zadań tego planu."
+	},
+	"actions": {
+		"ok": "Ok",
+		"exit": "Wyjdź",
+		"cancel": "Anuluj",
+		"retry": "Spróbuj ponownie",
+		"close": "Zamknij",
+		"edit": "Edytuj",
+		"delete": "Usuń",
+		"details": "Pokaż szczegóły",
+		"help": "Pokaż pomoc",
+		"back": "Cofnij",
+		"next": "Dalej",
+		"tapToSelect": "Dotknij, aby wybrać",
+		"selected": "Wybrano",
+		"selectAll": "Zaznacz wszystkie",
+		"deselectAll": "Odcznacz wszystkie",
+		"search": "Szukaj",
+		"confirm": "Zatwierdź",
+		"clear": "Wyczyść",
+		"clearAll": "Wyczyść wszystkie",
+		"unpair": "Rozłącz",
+		"signIn": "Zaloguj",
+		"signUp": "Załóż konto",
+		"signOut": "Wyloguj się",
+		"return": "Powrót",
+		"copyCode": "Skopiuj kod",
+		"contactUs":  "Napisz do nas",
+		"save": "Zapisz"
+	},
+	"authentication": {
+		"name": "Imię",
+		"email": "Adres e-mail",
+		"password": "Hasło",
+		"currentPassword": "Aktualne hasło",
+		"newPassword": "Nowe hasło",
+		"avatar": "Awatar",
+		"confirmPassword": "Powtórz hasło",
+		"googleSignIn": "Zaloguj się z Google",
+		"googleSignUp": "Załóż konto z Google",
+		"passwordChanged": "Hasło zmienione",
+		"nameChanged": "Imię zmienione",
+		"signInPrompt": "Musisz się najpierw ponownie zalogować",
+		"emailVerificationSent": "E-mail z linkiem weryfikacyjnym został wysłany",
+		"accountVerified": "Konto zostało pomyślnie zweryfikowane",
+		"passwordReset": "Hasło zostało zmienione",
+
+		"error": {
+			"incorrectData": "Nieprawidłowy e-mail lub hasło",
+			"incorrectEmail": "Nieprawidłowy adres e-mail",
+			"incorrectPassword": "Nieprawidłowe hasło",
+			"emailAlreadyUsed": "Adres e-mail jest już zajęty",
+			"emailInvalid": "Adres e-mail jest nieprawidłowy",
+			"nameEmpty": "Imię nie może być puste",
+			"userDisabled": "Użytkownik został wyłączony",
+			"invalidEmail": "Nieprawidłowy adres e-mail",
+			"userCodeToShort": "Kod jest za krótki",
+			"userCodeToLong": "Kod jest za długi",
+			"noSuchUser": "Użytkownik nie istnieje",
+			"passwordNotLongEnough": "Hasło musi być przynajmniej {LENGTH} znakowe",
+			"noPasswordMatch": "Hasła nie pasują",
+			"passwordEmpty": "Hasło nie może być puste",
+			"avatarEmpty": "Należy wybrać awatar dziecka",
+			"agreementNotAccepted": "Należy zaakceptować warunki",
+			"accountNotVerified": "Konto nie zostało zweryfikowane",
+			"emailLink": "Ten link {TYPE, select, 0 {resetujący hasło} 1 {weryfikujący konto} other {}} {ERR, select, 0 {jest nieprawidłowy} 1 {wygasł} other {}} - wygeneruj nowy",
+			"accountAlreadyVerified": "Konto już zostało zweryfikowane"
+		}
+	},
+	"notification": {
+		"button": {
+			"rate": "Oceń",
+			"view": "Zobacz"
+		},
+		"group": {
+			"caregiver": {
+				"rewardBought": "$[notif_count] odebranych nagród",
+				"taskFinished": "$[notif_count] wykonanych zadań",
+				"taskUnfinished": "$[notif_count] nieskończonych zadań"
+			},
+			"child": {
+				"taskApproved": "$[notif_count] ocenionych zadań",
+				"badgeAwarded": "$[notif_count] przyznanych odznak",
+				"taskRejected": "$[notif_count] odrzuconych planów"
+			}
+		},
+		"channel": {
+			"name": {
+				"general": "Ogólne",
+				"prizes": "Nagrody",
+				"grades": "Oceny",
+				"plans": "Plany"
+			},
+			"description": {
+				"general": "Ogólne powiadomienia",
+				"prizes": "Informacje o nagrodach",
+				"grades": "Informacje o ocenach zadań",
+				"plans": "Informacje o planach i zadaniach"
+			}
+		}
+	},
+	"help": {
+		"first_steps": "Pierwsze kroki",
+		"plan_creation": "Tworzenie planu",
+		"task_creation": "Konfiguracja zadania",
+		"reward_creation": "Tworzenie nagrody",
+		"badge_creation": "Tworzenie odznaki",
+		"plan_info": "Plany",
+		"currencies": "Waluty",
+		"friends": "Znajomi",
+		"rating": "Ocena zadań"
+	},
+	"assignedTo": "Przypisane do",
+	"points": "Punkty",
+	"and": "i",
+	"or": "lub",
+	"hour": "godz.",
+	"minute": "min",
+	"deleteWarning": "Tej akcji nie można cofnąć!",
+	"emailSubject": "Aplikacja Fokus - kontakt"
+}

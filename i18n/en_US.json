@@ -1,0 +1,781 @@
+{
+	"fokus": "Fokus",
+	"loading": "Loading",
+	"navigation": {
+		"caregiver": {
+			"panel": "Dashboard",
+			"plans": "Plans",
+			"awards": "Awards",
+			"caregiverCode": "My caregiver code"
+		},
+		"child": {
+			"plans": "Plans",
+			"rewards": "Rewards",
+			"achievements": "Achievements"
+		},
+		"settings": "Settings"
+	},
+	"page": {
+		"error": {
+			"noConnectionError": {
+				"title": "No connection",
+				"subtitle": "Application requires an internet connection to function",
+				"hint": "Ensure the device has access to the internet",
+				"action": "Try to reconnect"
+			},
+			"unknownError": {
+				"title": "Application encountered a problem",
+				"subtitle": "Our team is working on fixing this issue.\nWe are sorry for the inconvenience.",
+				"hint": "Restarting the application may help solve the problem",
+				"action": "Close the application"
+			}
+		},
+		"loginSection": {
+			"roles": {
+				"introduction": "I am a",
+				"caregiver": "Caregiver",
+				"child": "Child",
+				"help": "I need help"
+			},
+			"caregiverSignIn": {
+				"logInTitle": "Log in",
+				"logInHint": "Access your account",
+				"registerTitle": "New account",
+				"changeResetLabel": "Reset your password",
+				"registerHint": "Create new caregiver account to use the app",
+				"passwordForgotten": "Forgot your password?",
+				"resetPassword": "Reset password",
+				"enterEmail": "Enter the email address",
+				"resetEmailSent": "Email with a reset link was sent",
+				"resetVerificationEmail": "Send verification email"
+			},
+			"caregiverSignUp": {
+				"registerTitle": "Create new account",
+				"registerHint": "Fill the form below or use your Google account",
+				"agreement": "I agree to the",
+				"termsOfUse": "Terms of Use",
+				"privacyPolicy": "Privacy Policy"
+			},
+			"childProfiles": {
+				"addProfile": "Add profile",
+				"noSavedProfiles": "No saved profiles",
+				"profileLogInTitle": "Pick your profile",
+				"profileLogInHint": "Log in to your profile"
+			},
+			"childSignIn": {
+				"childCode": "Child code",
+				"caregiverCode": "Caregiver code",
+				"profileAddTitle": "Add profile",
+				"profileAddHint": "Add existing profile using special child code or create a new profile by filling the form",
+				"profileAddHintSignedIn": "Create a new child profile connected with your account",
+				"createNewProfile": "Create a new child profile",
+				"addProfile": "Add profile",
+				"avatarGroups": {
+					"boy": "Boy",
+					"girl": "Girl"
+				}
+			},
+			"backToLoginPage": "Back to login page",
+			"backToApp": "Back to the application",
+			"backToStartPage": "Back to start page"
+		},
+		"notifications": {
+			"header": {
+				"title": "Notifications"
+			},
+			"content": {
+				"caregiver": {
+					"rewardBought": "{CHILD_NAME} received the reward",
+					"taskFinished": "{CHILD_NAME} finished the task",
+					"taskUnfinished": "{CHILD_NAME} didn't finish the task",
+					"gradeTask": "Grade task",
+					"graded": "Graded"
+				},
+				"child": {
+					"taskApproved": "You received points for a task!",
+					"taskApprovedPrefix": "Task graded: ",
+					"taskApprovedStars": "{STARS}",
+					"taskApprovedCount": " and {COUNT, plural, offset:0, one {# point} other {# points}}",
+					"badgeAwarded": "You received a badge!",
+					"taskRejected": "Complete the task again"
+				}
+			}
+		},
+		"settings": {
+			"header": {
+				"title": "Settings"
+			},
+			"content": {
+				"profile": {
+					"header": "Profile",
+					"editNameLabel": "Change your name",
+					"editChildNameLabel": "Change child name",
+					"changePasswordLabel": "Change your password",
+					"deleteAccountLabel": "Delete your account",
+					"deleteChildAccountLabel": "Remove child account",
+					"deleteAccountHint": "Delete your and children's accounts",
+					"deleteAccountDescription": "Are you sure you want to delete your account? This will permanently erase all entered data including:",
+					"deleteChildAccountDescription": "Are you sure you want to delete this child's account? This will permanently erase all his/her data including:",
+					"deleteAccountDataList": "Plans|Tasks|Awards|Child profiles|Performed task history",
+					"deleteChildAccountDataList": "Profile|Awards|Points|Performed task history",
+					"deleteAccountConfirm": "Enter your password to confirm:",
+					"accountDeletedText": "Account was successfully deleted",
+					"accountChildDeletedText": "Child profile was successfully deleted"
+				},
+				"appSettings": {
+					"header": "App settings",
+					"currenciesLabel": "Point currencies",
+					"changeLanguageLabel": "App language",
+					"languages": {
+						"default": "System (default)",
+						"pl_PL": "Polish",
+						"en_US": "English"
+					}
+				},
+				"appInfo": {
+					"header": "App info",
+					"showAboutAppLabel": "About the app",
+					"about": {
+						"version": "Version",
+						"description": "Fokus is a mobile application that helps kids complete their daily tasks under parental control. It was created as part of a team project at Gdansk University of Technology.",
+						"creators": "Created by",
+						"licences": "Licences",
+						"projectPage": "Project page",
+						"termsOfUse": "Terms of Use",
+						"privacyPolicy": "Privacy Policy"
+					},
+					"contactUsHint": "Help improve the app"
+				}
+			}
+		},
+		"caregiverSection": {
+			"panel": {
+				"header": {
+					"greetings": "Welcome",
+					"addChild": "Add child",
+					"addCaregiver": "Add friend",
+					"rateTasks": "Rate Tasks"
+				},
+				"content": {
+					"childProfilesTitle": "Child profiles",
+					"childProfilesSubtitle": "Children earn points by doing tasks",
+					"noChildProfilesAdded": "No children assigned",
+					"caregiverProfilesTitle": "Friends",
+					"caregiverProfilesSubtitle": "List of befriended caregivers",
+					"noCaregiverProfilesAdded": "No befriended caregivers found",
+					"caregiverCode": "Caregiver code",
+					"caregiverAddedText": "New friend added",
+					"caregiverAlreadyBefriendedError": "This caregiver is already your friend",
+					"enteredOwnCaregiverCodeError": "You can't befriend yourself",
+					"todayPlans": "{NUM_PLANS, plural, offset:0 zero {No plans} one {# plan} other {# plans}} for today",
+					"activePlan": "1 plan currently in progress"
+				}
+			},
+			"childDashboard": {
+				"header": {
+					"title": "Child details",
+					"childCode": "Child code",
+					"assignPlanButton": "Assign plans",
+					"assignPlanTitle": "Choose plans to assign",
+					"assignBadgeButton": "Award badge",
+					"assignBadgeTitle": "Choose badges to award",
+					"noBadgesToAssignText": "No available badges to award",
+					"tabs": {
+						"plans": "Plans",
+						"rewards": "Rewards",
+						"achievements": "Achievements"
+					}
+				},
+				"content": {
+					"plansTitle": "Today's plans",
+					"noPlansText": "No actions planned for today",
+					"openCalendarButton": "Open calendar",
+					"rewardsTitle": "Claimed rewards",
+					"noRewardsText": "No claimed rewards to display",
+					"achievementsTitle": "Awarded badges",
+					"noAchievementsText": "No awarded badges to display",
+					"alerts": {
+						"noPlansAdded": "No plan added yet. Add a plan to be able to assign it to a child.",
+						"unratedTasksExist": "There are unrated tasks. Visit the rating page to assign points for completed tasks.",
+						"noRewardsAdded": "The list of rewards available for purchase is empty. Add an award for a child to claim.",
+						"noBadgesAdded": "The list of badges is empty. Add a badge to be able to assign it to a child."
+					}
+				}
+			},
+			"calendar": {
+				"header": {
+					"title": "Plan calendar",
+					"filterPlansTitle": "Filter displayed plans",
+					"showPlansForTitle": "Show plans assigned to",
+					"emptyListHeader": "You can't filter right now",
+					"emptyListText": "You haven't added any child profile to your account yet"
+				},
+				"content": {
+					"plansOnDateTitle": "Plans on {DATE}",
+					"noPlansOnDateTitle": "No active plans on this day",
+					"planAssignedToSubtitle": "Assigned to",
+					"planNotAssignedToSubtitle": "Plan not assigned yet",
+					"addPlan": "Add plan"
+				}
+			},
+			"friendPlans": {
+				"content": {
+					"noPlansText": "This friend didn't add any plans yet",
+					"plansTitle": "Friend's plans",
+					"duplicateButton": "Create plan basing on this one",
+					"removeFriendTitle": "Remove from friends",
+					"removeFriendText": "You will lose access to plans created by that friend. Are you sure you want to remove this friend?",
+					"friendRemovedText": "Friend has been removed"
+				}
+			},
+			"plans": {
+				"header": {
+					"title": "Plans",
+					"addPlan": "Add plan",
+					"calendar": "Calendar",
+					"pageHint": "Manage children's tasks"
+				},
+				"content": {
+					"addedActivePlansTitle": "Added plans",
+					"addedActivePlansSubtitle": "Visible for children",
+					"addedDeactivatedPlansTitle": "Deactivated plans",
+					"addedDeactivatedPlansSubtitle": "Not visible for children",
+					"noPlansAdded": "No plans to display",
+					"tasks": "{NUM_TASKS, plural, offset:0  =1 {# task} other {# tasks}}"
+				}
+			},
+			"planForm": {
+				"createPlanTitle": "Creating new plan",
+				"editPlanTitle": "Editing existing plan",
+				"copyPlanTitle": "Copying plan",
+				"planCreatedText": "Plan created",
+				"planEditedText": "Changes saved",
+				"step": "Step {NUM_STEP}",
+				"stepOneTitle": "Plan parameters",
+				"stepTwoTitle": "Task list",
+				"addTaskButton": "Add task",
+				"editTaskButton": "Edit task",
+				"removeTaskButton": "Remove task",
+				"saveTaskButton": "Save task",
+				"noTasksMessage": "The task list is empty",
+				"requiredTaskListTitle": "Required tasks",
+				"optionalTaskListTitle": "Optional tasks",
+				"clearAllTasksText": "Are you sure you want to clear all added tasks?",
+				"taskLimitTitle": "Task limit",
+				"taskLimitText": "You reached plan's task limit ({TASK_LIMIT_NUM}). You can't add another one.",
+				"taskListEmptyTitle": "No tasks added",
+				"taskListEmptyText": "Each plan must have minimum 1 task.",
+				"fields": {
+					"advancedOptionsTitle": "Advanced options",
+					"planName": {
+						"label": "Plan name",
+						"emptyError": "Plan name can't be empty"
+					},
+					"assignedChildren": {
+						"label": "Assigned children",
+						"hint": "Choose one or more children",
+						"emptyListHeader": "You can't assign children",
+						"emptyListText": "You haven't added any child profile to your account yet, but you can continue creating a plan without assigning children."
+					},
+					"repeatability": {
+						"label": "Repeatability",
+						"options": {
+							"recurring": "Recurring",
+							"onlyOnce": "Only once",
+							"untilCompleted": "Until completed"
+						}
+					},
+					"repeatabilityRange": {
+						"label": "Repeat period",
+						"options": {
+							"weekly": "Weekly",
+							"monthly": "Monthly"
+						}
+					},
+					"days": {
+						"labelWeekly": "Weekdays",
+						"labelMonthly": "Month days",
+						"hint": "Choose at least 1 day"
+					},
+					"onlyOneDate": {
+						"label": "Plan's date",
+						"emptyError": "Plan's date must be set"
+					},
+					"range": {
+						"fromLabel": "Plan available from date",
+						"toLabel": "Plan available to date",
+						"hint": "Leave empty to not limit date range"
+					},
+					"active": {
+						"label": "Plan active",
+						"hintOn": "Visible immediately after creation",
+						"hintOff": "Hidden after creation"
+					}
+				}
+			},
+			"taskForm": {
+				"removeTaskTitle": "Remove task",
+				"removeTaskText": "Are you sure you want to remove this task?",
+				"fields": {
+					"taskName": {
+						"label": "Task name"
+					},
+					"taskDescription": {
+						"label": "Task description"
+					},
+					"subtaskDescription": {
+						"label": "Subtask description",
+						"add": "Add subtask",
+						"sectionTitle": "Subtasks list",
+						"sectionSubtitle": "{NUM_SUBTASKS, plural, offset:0  =1 {# subtask} other {# subtasks}}"
+					},
+					"taskOrder": {
+						"label": "Order execution"
+					},
+					"taskPoints": {
+						"valueLabel": "Points awarded",
+						"currencyLabel": "Currency",
+						"hint": "Leave empty to not award points"
+					},
+					"taskTimer": {
+						"label": "Task execution time",
+						"notSet": "Unlimited",
+						"set": "Limited to",
+						"format": "{HOURS_NUM, plural, offset:0 zero {} other {# hr }}{MINUTES_NUM} min"
+					},
+					"taskOptional": {
+						"label": "Optional task",
+						"hint": "Optional tasks have no order"
+					}
+				}
+			},
+			"awards": {
+				"header": {
+					"title": "Awards",
+					"addReward": "Add reward",
+					"addBadge": "Add badge",
+					"pageHint": "Increase work motivation"
+				},
+				"content": {
+					"addedRewardsTitle": "Added rewards",
+					"addedRewardsSubtitle": "Rewards can be claimed using points",
+					"noRewardsAdded": "No rewards to display, add the first one now",
+					"addedBadgesTitle": "Added badges",
+					"addedBadgesSubtitle": "Badges are assigned by caregivers",
+					"noBadgesAdded": "No badges to display, add the first one now",
+					"noDescriptionSubtitle": "No description",
+					"removeRewardTitle": "Remove reward",
+					"removeRewardText": "Rewards claimed by children will not be removed, though this reward will no longer be available. Are you sure you want to remove this reward?",
+					"removeBadgeTitle": "Remove badge",
+					"removeBadgeText": "Assigned badges will not be removed, bu you will loose the ability to assign this badge to other children. Are you sure you want to remove this badge?",
+					"rewardAddedText": "Reward was added",
+					"badgeAddedText": "Badge was added",
+					"rewardUpdatedText": "Reward has been updated",
+					"rewardRemovedText": "Reward has been removed",
+					"badgeRemovedText": "Badge has been removed"
+				}
+			},
+			"rewardForm": {
+				"addRewardTitle": "Add reward",
+				"editRewardTitle": "Edit reward",
+				"removeRewardTitle": "Remove reward",
+				"removeRewardText": "Are you sure you want to remove this reward?",
+				"fields": {
+					"rewardName": {
+						"label": "Reward name",
+						"emptyError": "Reward name can't be empty"
+					},
+					"rewardLimit": {
+						"label": "Reward limit",
+						"zeroError": "Reward limit must be empty or positive",
+						"hint": "Number of possible claims per child, leave empty for unlimited"
+					},
+					"rewardPoints": {
+						"valueLabel": "Reward point cost",
+						"currencyLabel": "Point currency",
+						"hint": "How many points are needed to collect the reward",
+						"emptyError": "Point cost must be at least 1"
+					},
+					"rewardIcon": {
+						"label": "Reward icon",
+						"groups": {
+							"gift": "Gift",
+							"activity": "Activity",
+							"relax": "Relax",
+							"food": "Food"
+						}
+					}
+				}
+			},
+			"badgeForm": {
+				"addBadgeTitle": "Add badge",
+				"fields": {
+					"badgeName": {
+						"label": "Badge name",
+						"emptyError": "Badge name can't be empty"
+					},
+					"badgeDescription": {
+						"label": "Badge description"
+					},
+					"badgeIcon": {
+						"label": "Badge icon",
+						"groups": {
+							"praise": "Praise",
+							"medal": "Medal",
+							"trophy": "Trophy"
+						}
+					}
+				}
+			},
+			"planDetails": {
+				"header": {
+					"title": "Plan details",
+					"noChildren": "Not assigned"
+				},
+				"content": {
+					"mandatoryTasks": "Mandatory tasks",
+					"additionalTasks": "Additional tasks",
+					"noTasks": "No tasks",
+					"copyPlanButton": "Copy plan",
+					"planRemovedText": "Plan has been removed"
+				}
+			},
+			"rating":  {
+				"header": {
+					"title": "Task rating"
+				},
+				"content": {
+					"noTasksToRate": "No tasks to rate",
+					"notRatedTasksLeft": "{TASKS_NUM, plural, offset:0 zero {All tasks rated!} one {# unrated task} other {# unrated tasks}}",
+					"rateTaskButton": "Rate task",
+					"previousTaskButton": "Previous",
+					"nextTaskButton": "Next",
+					"raportCard": {
+						"carriedOutBy": "Task carried out by",
+						"raportDate": "Task date",
+						"raportTime": "Task time",
+						"raportBreaks": "Used breaks",
+						"breakCount": "{BREAKS_NUM, plural, offset:0 zero {No breaks} one {# break} other {# breaks}}",
+						"totalBreakTime": "time total",
+						"timeFormat": "{HOURS_NUM, plural, offset:0 zero {} other {# h }}{MINUTES_NUM} min {SECONDS_NUM} s",
+						"ratedOnLabel": "Rated {STARS_NUM} out of 5",
+						"ratedOnHint": "Child received {POINTS_NUM, plural, offset:0 one {# point} other {# points}}",
+						"rejectedLabel": "Marked as not done",
+						"rejectedHint": "Child must repeat this task"
+					},
+					"form": {
+						"ratingLabel": "Rating",
+						"pointsAssigned": "Points assigned",
+						"ratingLevels": {
+							"rated5": "Great",
+							"rated4": "Good",
+							"rated3": "OK",
+							"rated2": "So-so",
+							"rated1": "Acceptable",
+							"rejected": "Task rejected"
+						},
+						"markTaskAsNotDone": "Mark task as not done",
+						"markTaskAsNotDoneHint": "Child will need to do this task again to get points",
+						"rateCommentLabel": "Task feedback"
+					}
+				}
+			},
+			"currencies": {
+				"header": {
+					"title": "Currencies"
+				},
+				"content": {
+					"generalHint": "You can configure up to three additional currencies for use in tasks and rewards. The default currency can't be changed.",
+					"currenciesUpdatedText": "Available currencies have been updated",
+					"saveCurrenciesButton": "Save currencies",
+					"currencyNotUsed": "Not used",
+					"currencyNameLabel": "Currency name",
+					"clearCurrencyText": "You will loose the ability to use this currency. Points already gathered by children will remain intact. Are you sure you want to clear this currency?",
+					"currencies": {
+						"diamond": "Diamond",
+						"emerald": "Emerald",
+						"ruby": "Ruby",
+						"amethyst": "Amethyst"
+					}
+				}
+			}
+		},
+		"childSection": {
+			"panel": {
+				"header": {
+					"greetings": "Hello",
+					"myPoints": "My points",
+					"noPoints": "No earned points yet",
+					"pageHint": "Complete tasks and earn points",
+					"garden": "Garden"
+				},
+				"content": {
+					"futurePlans": "Plans calendar"
+				}
+			},
+			"planInProgress": {
+				"header": {
+					"title": "Plan details"
+				},
+				"content": {
+					"toDoTasks": "To-do list",
+					"additionalTasks": "Additional tasks",
+					"noTasks": "No tasks",
+					"tasks": "{NUM_TASKS, plural, offset:0  one {# task} other {# tasks}}",
+					"taskTimer": {
+						"label": "Time to complete the task",
+						"notSet": "Unlimited",
+						"set": "Limited to",
+						"duration": "Total time to complete the task",
+						"formatDuration": "Time: {TIME_NUM}",
+						"formatBreak": "Break: {TIME_NUM}",
+						"format": "{HOURS_NUM, plural, offset:0 zero {} other {# hr }}{MINUTES_NUM} min",
+						"break": "Total breaks time"
+					},
+					"chips" : {
+						"rejected" : "Rejected",
+						"rating" : "{RATING}/5",
+						"notEvaluated" : "Not evaluated",
+						"rejectedTooltip" : "Task has been rejected by caregiver",
+						"notEvaluatedTooltip" : "Ask caregiver to rate task",
+						"pointsPossible" : "Max points to earn",
+						"timer": "Plan execution time"
+					},
+					"taskInProgressDialog" : {
+						"title": "Different task in progress",
+						"content": "You can't perform two tasks at the same time. Complete the current one and try again."
+					},
+					"fab" : {
+						"completePlan": "Complete plan",
+						"completed": "Plan has been completed",
+						"dialogTitle": "Completing the plan",
+						"dialogContent": "Completion of the plan will result in the discarding of incomplete tasks. You will be able to do them again by the end of the day. Are you sure you want to continue?"
+					}
+				}
+			},
+			"taskInProgress": {
+				"header": {
+					"title": "Plan completion"
+				},
+				"content": {
+					"reject": "REJECT",
+					"break": "BREAK",
+					"done": "DONE",
+					"timeLeft": "Time left:",
+					"breakTime": "Break duration:",
+					"isCompleted": "Task completed?",
+					"breakButton": "Break",
+					"resumeButton": "Resume",
+					"pointsToGet": "To earn:",
+					"motivate": "Complete tasks!",
+					"completionTime": "Completion time:",
+					"latency": "Late:"
+				},
+				"cards" : {
+					"break": {
+						"title": "Break time,\n rest awhile!"
+					},
+					"done": {
+						"title": "Task completed!",
+						"content1": "You will receive points after approval from the caregiver.",
+						"content2": "Continue with your tasks!"
+					},
+					"rejected": {
+						"title": "Task cancelled",
+						"content1": "You can redo the task \nor move to the next one!"
+					}
+				}
+			},
+			"calendar": {
+				"header": {
+					"title": "Plan calendar"
+				},
+				"content": {
+					"plansOnDateTitle": "Plans for {DATE}",
+					"noPlansOnDateTitle": "No plans for this day"
+				}
+			},
+			"rewards": {
+				"content": {
+					"rewardsTitle": "Available rewards",
+					"noRewardsMessage": "No available rewards to display",
+					"rewardsHint": "You can exchange your points for rewards",
+					"claimedRewardsTitle": "Claimed rewards",
+					"claimRewardTitle": "Claim reward",
+					"claimButton": "Claim",
+					"rewardClaimedText": "Reward claimed"
+				}
+			},
+			"achievements": {
+				"content": {
+					"achievementsTitle": "Achievements",
+					"achievementsHint": "Click on the badge to show details",
+					"noAchievementsMessage": "No achievements to display",
+					"earnedBadgeTitle": "Earned badge",
+					"earnedBadgeDate": "Earned on"
+				}
+			}
+		}
+	},
+	"rewards": {
+		"claimCostLabel": "Reward cost",
+		"claimDateLabel": "Claimed on",
+		"unlimitedReward": "Unlimited reward",
+		"limitedReward": "Limited {REWARD_LIMIT, plural, offset:0 one {one reward} other {# rewards}} per child"
+	},
+	"plans": {
+		"todaysPlans": "Today's plans",
+		"remainingTodaysPlans": "Remaining today's plans",
+		"inProgress": "In progress",
+		"noPlans": "No plans",
+		"completedPlans": "Completed plans",
+		"tasks": "{NUM_TASKS, plural, offset:0  one {# task} other {# tasks}}",
+		"noTaskCompleted": "{NUM_ALL_TASKS, plural, offset:0 one {# task} other {# tasks}} to complete",
+		"taskProgress": "{NUM_TASKS} out of {NUM_ALL_TASKS} tasks completed"
+	},
+	"repeatability": {
+		"once": "On {DAY}",
+		"startedOn": "From {DAY}",
+		"weekly": "Every",
+		"monthly": "Every {DAYS} day of the month",
+		"weekday": "{WEEKDAY, select, 1 {monday} 2 {tuesday} 3 {wednesday} 4 {thursday} 5 {friday} 6 {saturday} 7 {sunday} other {}}",
+		"untilCompleted": "until completed",
+		"range": "from {FROM} to {TO}"
+	},
+	"date": {
+		"weekday": "{WEEKDAY, select, 1 {Monday} 2 {Tuesday} 3 {Wednesday} 4 {Thursday} 5 {Friday} 6 {Saturday} 7 {Sunday} other {}}",
+		"everyday": "Everyday",
+		"workdays": "Work days only"
+	},
+	"alert": {
+		"errorOccurred": "Error occurred",
+		"noConnection": "No connection",
+		"noHint": "No hint",
+		"genericEmptyValue": "This field can't be empty",
+		"genericRangeOverflowValue": "Value must be in the range {A}-{B}",
+		"unsavedProgressTitle": "Unsaved progress",
+		"unsavedProgressMessage": "You have unsaved progress. Are you sure you want to exit?",
+		"codeCopied": "Code copied to the clipboard",
+		"deletePlan": "Delete the plan",
+		"confirmPlanDeletion": "Are you sure you want to delete this plan? This will permanently erase all connected data including the history of performed tasks from this plan."
+	},
+	"actions": {
+		"ok": "Ok",
+		"exit": "Exit",
+		"cancel": "Cancel",
+		"retry": "Retry",
+		"close": "Close",
+		"edit": "Edit",
+		"delete": "Delete",
+		"details": "Show details",
+		"help": "Show help",
+		"back": "Back",
+		"next": "Next",
+		"tapToSelect": "Tap to select",
+		"selected": "Selected",
+		"selectAll": "Select all",
+		"deselectAll": "Deselect all",
+		"search": "Search",
+		"confirm": "Confirm",
+		"clear": "Clear",
+		"clearAll": "Clear all",
+		"unpair": "Unpair",
+		"signIn": "Login",
+		"signUp": "Sign up",
+		"signOut": "Sign out",
+		"return": "Return",
+		"copyCode": "Copy code",
+		"contactUs":  "Contact us",
+		"save": "Save"
+	},
+	"authentication": {
+		"name": "First name",
+		"email": "Email address",
+		"password": "Password",
+		"currentPassword": "Current password",
+		"newPassword": "New password",
+		"avatar": "Avatar",
+		"confirmPassword": "Repeat password",
+		"googleSignIn": "Sign in with Google",
+		"googleSignUp": "Sign up with Google",
+		"passwordChanged": "Password changed",
+		"nameChanged": "Name changed",
+		"signInPrompt": "You need to log back first",
+		"emailVerificationSent": "Email verification link has been sent",
+		"accountVerified": "Account has been successfully verified",
+		"passwordReset": "Password was changed",
+
+		"error": {
+			"incorrectData": "Incorrect email or password",
+			"incorrectEmail": "Incorrect email address",
+			"incorrectPassword": "Incorrect password",
+			"emailAlreadyUsed": "Email address is already taken",
+			"emailInvalid": "Email address is invalid",
+			"nameEmpty": "Name can not be empty",
+			"userDisabled": "User has been disabled",
+			"invalidEmail": "Invalid email address",
+			"userCodeToShort": "Code is to short",
+			"userCodeToLong": "Code is to long",
+			"noSuchUser": "User does not exist",
+			"passwordNotLongEnough": "Password must have at least {LENGTH, plural, offset:0 one {# character} other {# characters}} long",
+			"noPasswordMatch": "Passwords do not match",
+			"passwordEmpty": "Password can not be empty",
+			"avatarEmpty": "You must pick child's avatar",
+			"agreementNotAccepted": "You must agree to the terms and conditions",
+			"accountNotVerified": "Account has not been verified",
+			"emailLink": "This {TYPE, select, 0 {password reset} 1 {account verification} other {}} link {ERR, select, 0 {is invalid} 1 {has expired} other {}} - generate a new one",
+			"accountAlreadyVerified": "Account is already verified"
+		}
+	},
+	"notification": {
+		"button": {
+			"rate": "Rate",
+			"view": "View"
+		},
+		"group": {
+			"caregiver": {
+				"rewardBought": "$[notif_count] rewards bought",
+				"taskFinished": "$[notif_count] tasks finished",
+				"taskUnfinished": "$[notif_count] tasks unfinished"
+			},
+			"child": {
+				"taskApproved": "$[notif_count] tasks graded",
+				"badgeAwarded": "$[notif_count] badges awarded",
+				"taskRejected": "$[notif_count] plans rejected"
+			}
+		},
+		"channel": {
+			"name": {
+				"general": "General",
+				"prizes": "Prizes",
+				"grades": "Grades",
+				"plans": "Plans"
+			},
+			"description": {
+				"general": "General notifications",
+				"prizes": "Child prizes updates",
+				"grades": "Task grading updates",
+				"plans": "Plan and task updates"
+			}
+		}
+	},
+	"help": {
+		"first_steps": "First steps",
+		"plan_creation": "Plan creation",
+		"task_creation": "Task creation",
+		"reward_creation": "Reward creation",
+		"badge_creation": "Badge creation",
+		"plan_info": "Plans",
+		"currencies": "Currencies",
+		"friends": "Friends",
+		"rating": "Task rating"
+	},
+	"assignedTo": "Assigned to",
+	"points": "Points",
+	"and": "and",
+	"or": "or",
+	"hour": "hr",
+	"minute": "min",
+	"deleteWarning": "This action cannot be undone!",
+	"emailSubject": "Fokus app - contact"
+}

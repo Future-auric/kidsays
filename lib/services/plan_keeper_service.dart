@@ -1,0 +1,94 @@
+import 'dart:async';
+
+import 'package:get_it/get_it.dart';
+import 'package:mongo_dart/mongo_dart.dart';
+
+import '../model/db/date/date.dart';
+import '../model/db/date/time_date.dart';
+import '../model/db/date_span.dart';
+import '../model/db/plan/plan.dart';
+import '../model/db/plan/plan_instance.dart';
+import '../model/db/plan/plan_instance_state.dart';
+import '../model/db/user/user.dart';
+import '../model/db/user/user_role.dart';
+import 'data/data_repository.dart';
+import 'model_helpers/plan_repeatability_service.dart';
+import 'observers/user/user_notifier.dart';
+import 'observers/user/user_observer.dart';
+
+class PlanKeeperService implements UserObserver {
+	final DataRepository _dataRepository = GetIt.I<DataRepository>();
+	final UserNotifier _userNotifier = GetIt.I<UserNotifier>();
+	final PlanRepeatabilityService _repeatabilityService = GetIt.I<PlanRepeatabilityService>();
+
+	Timer? _dataCheckTimer;
+	ObjectId? _userId;
+	UserRole? _role;
+
+	PlanKeeperService() {
+		_userNotifier.observeUserChanges(this);
+	}
+
+  @override
+	Future onUserSignIn(User user) async {
+		return Future.sync(() async {
+			_userId = user.id;
+			_role = user.role;
+
+			onUserSignOut(user);
+			await _updateData();
+			var now = DateTime.now();
+			var timeToMidnight = DateTime(now.year, now.month, now.day + 1, 0, 0, 10).difference(now);
+			_dataCheckTimer = Timer(timeToMidnight, _firstTimerCallback);
+		});
+	}
+
+	@override
+	void onUserSignOut(User user) {
+		if (_dataCheckTimer != null)
+			_dataCheckTimer!.cancel();
+	}
+
+	void _firstTimerCallback() {
+		_updateData();
+		_dataCheckTimer = Timer.periodic(Duration(days: 1), (_) => _updateData());
+	}
+
+	Future _updateData() async {
+		getRoleId(UserRole paramRole) => paramRole == _role ? _userId : null;
+		var plans = await _dataRepository.getPlans(caregiverId: getRoleId(UserRole.caregiver),
+				childId: getRoleId(UserRole.child), fields: ['_id', 'repeatability', 'active', 'assignedTo', 'tasks']);
+		var children = await _dataRepository.getUsers(role: UserRole.child, connected: _userId, fields: ['_id']);
+		var childrenIDs = _role == UserRole.caregiver ? children.map((child) => child.id!).toList() : [_userId!];
+
+		return Future.wait([
+			createPlansForToday(plans, childrenIDs),
+			_updateOutdatedData(plans, childrenIDs)
+		]);
+	}
+
+	Future<List<PlanInstance>> createPlansForToday(List<Plan> plans, List<ObjectId> childrenIDs) async {
+		var todayPlans = _repeatabilityService.filterPlansByDate(plans, Date.now());
+		var instances = <PlanInstance>[];
+		for (var plan in todayPlans)
+			instances.addAll(childrenIDs.where(plan.assignedTo!.contains).map((child) => PlanInstance.fromPlan(plan, assignedTo: child)));
+		await _dataRepository.createPlanInstances(instances);
+		return instances;
+	}
+
+	Future _updateOutdatedData(List<Plan> plans, List<ObjectId> childrenIDs) async {
+		var planIDs = plans.where((plan) => !plan.repeatability!.untilCompleted!).map((plan) => plan.id!).toList();
+		var instances = await _dataRepository.getPastNotCompletedPlanInstances(childrenIDs, planIDs, Date.now(), fields: ['_id', 'date', 'duration', 'state']);
+		getEndTime(Date date) => TimeDate.fromDate(date.add(Duration(days: 1)));
+
+		var updates = <Future>[];
+		for (var instance in instances)
+			updates.add(_dataRepository.updatePlanInstanceFields(
+				instance.id!,
+				state: PlanInstanceState.lostForever,
+				durationChange: instance.duration!.isNotEmpty ? DateSpanUpdate<TimeDate>(getEndTime(instance.date!), SpanDateType.end, instance.duration!.length - 1) : null
+			));
+		return Future.wait(updates);
+		// TODO there are also 'to' fields in task instance last 'duration' and 'breaks' objects that could be left missing here - handle here or inside statistics code
+	}
+}

@@ -1,0 +1,11 @@
+app/google-services.json
+app/src/release/google-services.json
+key.properties
+
+gradle-wrapper.jar
+/.gradle
+/captures/
+/gradlew
+/gradlew.bat
+/local.properties
+GeneratedPluginRegistrant.java
