@@ -2,7 +2,7 @@
 
 <div align="center">
 
-Kidsays is a mobile application that helps kids complete their daily tasks under parental control
+Kidsays is a mobile application that helps kids achieve their tasks with parental control 
 </div>
 
 ## Screens
